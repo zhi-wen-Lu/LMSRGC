@@ -1,0 +1,46 @@
+to compile type:
+	make
+
+run with:
+	./kmacs <sequence file> k
+
+where k is the number of allowed mismatches and the <sequence file> has to be in FASTA format. For k=0, kmacs calculates ACS (http://online.liebertpub.com/doi/abs/10.1089/cmb.2006.13.336)
+
+alternative: using the above mentioned command will extend the substrings by matching single characters, which was faster in our tests. In some *rare* cases however, it could be faster to extend the substrings by using range minimum queries (RMQ). To do so, add the option "-r" as shown below.
+
+	./kmacs -r <sequence file> k
+
+ ____________________________________________________________________________________________________________________________________________
+|                                                                                                                                            
+|Scientific publications using kmacs should cite:
+|
+|    C.-A. Leimeister, B. Morgenstern (2014)
+|    kmacs: the k-Mismatch Average Common Substring Approach to alignment-free sequence comparison
+|    Bioinformatics, DOI: 10.1093/bioinformatics/btu331
+|
+|    S. Horwege, S. Lindner, M. Boden, K. Hatje, M. Kollmar, C.-A. Leimeister, B. Morgenstern (2014)
+|    Spaced words and kmacs: fast alignment-free sequence comparison based on inexact word matches
+|    Nuc. Acids Research, DOI: 10.1093/nar/gku398
+|
+|                                                                                           
+|For questions about kmacs, send an e-mail to: chris.leimeister@stud.uni-goettingen.de                                                       
+|                                                                                                                                            
+|____________________________________________________________________________________________________________________________________________
+
+
+Auxiliary Software used: 
+
+For the enhanced suffix array construction, kmacs uses sais-lite-LCP-0.0.1 by Johannes Fischer, see "Inducing the LCP-Array" (http://arxiv.org/abs/1101.3448). This is an extension of the original suffix array construction algorithm: sais-lite 2.4.1 by Yuta Mori (http://sites.google.com/site/yuta256) which is based on:
+
+Ge Nong, Sen Zhang and Wai Hong Chan
+Two Efficient Algorithms for Linear Suffix Array Construction
+DCC 2009.
+
+For RMQ we used this implementation:
+
+Fischer, J. and Heun, V. (2007). A new succinct representation of RMQ-information and improvements in the enhanced suffix array.
+Proceedings of the International Symposium on Combinatorics, Algorithms, Probabilistic and Experimental Methodologies, Lecture Notes in Computer Science 4614, 
+pages 459–470.
+
+____________________________________________________________________________________________________________________________________________
+

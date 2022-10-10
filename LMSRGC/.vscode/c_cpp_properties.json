@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/opt/rh/devtoolset-10/root/usr/bin/gcc"
+        }
+    ],
+    "version": 4
+}

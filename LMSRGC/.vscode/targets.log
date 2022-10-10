@@ -1,0 +1,330 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.82
+# Built for x86_64-redhat-linux-gnu
+# Copyright (C) 2010  Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Wed Jul 20 09:09:31 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# default
+.SHELLFLAGS := -c
+# environment
+QTDIR = /usr/lib64/qt-3.3
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+MODULEPATH = /usr/share/Modules/modulefiles:/etc/modulefiles
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+X_SCLS = rh-java-common 
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /itmslhppc/itmsl0105/final/kmacs
+# makefile
+SHELL = /bin/sh
+# environment
+VTE_VERSION = 5204
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 1)
+CFLAGS = -Isrc/include -Isrc/RMQ -std=c++11
+# environment
+XDG_CONFIG_DIRS = /opt/rh/devtoolset-4/root/etc/xdg:/opt/rh/devtoolset-4/root/etc/xdg:/opt/rh/rh-java-common/root/etc/xdg:/etc/xdg
+# environment
+LESSOPEN = ||/usr/bin/lesspipe.sh %s
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+HISTCONTROL = ignoredups
+# environment
+XDG_DATA_DIRS = /opt/rh/devtoolset-4/root/usr/share::/usr/local/share:/usr/share
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:abstract=/tmp/dbus-V0hEbK3ROY,guid=52ab65323a20d517836e3cf862d75581
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+QT_PLUGIN_PATH = /usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+# environment
+INFOPATH = /opt/rh/devtoolset-4/root/usr/share/info:/opt/rh/devtoolset-4/root/usr/share/info:/opt/rh/devtoolset-10/root/usr/share/info
+# environment
+PCP_DIR = /opt/rh/devtoolset-4/root
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1011/vscode-ipc-55ba2022-3d50-41ec-bc4e-92cea92ef25d.sock
+# environment
+VSCODE_CWD = /itmslhppc/itmsl0105
+# environment
+PATH = /opt/rh/devtoolset-4/root/usr/bin:/itmslhppc/itmsl0105/.local/bin:/usr/local/cuda-10.2/bin:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin:/usr/local/cuda/bin:/itmslhppc/soft/Matlab/bin:/usr/local/ncbi-blast-2.9.0/bin:/usr/local/samtools-1.9:/usr/local/proovread/bin:/usr/local/TensorRT-7.1.3.4/lib:/usr/local/hercules/bin:/usr/local/hercules/utils/bin:/usr/local/File-Which-0.05/bin:/usr/local/sratoolkit.2.9.2/bin:/usr/local/cmake/bin:/usr/local/git/bin
+# environment
+QT_GRAPHICSSYSTEM_CHECKED = 1
+# environment
+SESSION_MANAGER = local/unix:@/tmp/.ICE-unix/5035,unix/unix:/tmp/.ICE-unix/5035
+# environment
+XDG_RUNTIME_DIR = /run/user/1011
+# environment
+BREAKPAD_DUMP_LOCATION = /itmslhppc/itmsl0105/.config/Code/exthost Crash Reports
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+VSCODE_LOG_STACK = false
+# environment
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=ffff0189-a39f-4d9f-9fb7-db66aaba7955&iid=ffff0189-a39f-4d9f-9fb7-db66aaba7955&sid=ffff0189-a39f-4d9f-9fb7-db66aaba7955","uploadToServer":true}
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver check-symlink
+# environment
+LS_COLORS = rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+# environment
+SSH_AUTH_SOCK = /run/user/1011/keyring/ssh
+# automatic
+%F = $(notdir $%)
+# environment
+KDEDIRS = /usr
+# environment
+DISPLAY = :12
+# environment
+IMSETTINGS_INTEGRATE_DESKTOP = yes
+# environment
+PWD = /itmslhppc/itmsl0105/final/kmacs
+# environment
+SSH_AGENT_PID = 7079
+# environment
+PKG_CONFIG_PATH = /opt/rh/devtoolset-10/root/usr/lib64/pkgconfig
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = GNOME
+# environment
+MANPATH = /opt/rh/devtoolset-4/root/usr/share/man:/opt/rh/devtoolset-4/root/usr/share/man:/opt/rh/rh-java-common/root/usr/share/man:/opt/rh/devtoolset-10/root/usr/share/man:
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+HOME = /itmslhppc/itmsl0105
+# environment
+LD_LIBRARY_PATH = /opt/rh/devtoolset-4/root/usr/lib64:/opt/rh/devtoolset-4/root/usr/lib:/itmslhppc/itmsl0105/workspace/kmacs-array/kmacs:/usr/local/cuda-10.2/lib64:
+# environment
+VSCODE_CLI = 1
+# environment
+PERL5LIB = /opt/rh/devtoolset-4/root//usr/lib64/perl5/vendor_perl:/opt/rh/devtoolset-4/root/usr/lib/perl5:/opt/rh/devtoolset-4/root//usr/share/perl5/vendor_perl:/opt/rh/devtoolset-4/root//usr/lib64/perl5/vendor_perl:/opt/rh/devtoolset-4/root/usr/lib/perl5:/opt/rh/devtoolset-4/root//usr/share/perl5/vendor_perl
+# environment
+VSCODE_CODE_CACHE_PATH = /itmslhppc/itmsl0105/.config/Code/CachedData/899d46d82c4c95423fb7e10e68eba52050e30ba3
+# environment
+LOGNAME = itmsl0105
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+MAKE_VERSION := 3.82
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+HOSTNAME = itmslsrv01
+# environment
+MAKELEVEL := 0
+# environment
+COLORTERM = truecolor
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# environment
+SHLVL = 6
+# environment
+GNOME_SHELL_SESSION_MODE = classic
+# environment
+XDG_SESSION_ID = c13
+# environment
+USER = itmsl0105
+# environment
+QTLIB = /usr/lib64/qt-3.3/lib
+# environment
+XDG_CURRENT_DESKTOP = GNOME
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+define BASH_FUNC_module()
+() {  eval `/usr/bin/modulecmd bash $*`
+}
+endef
+# environment
+VNCDESKTOP = itmslsrv01:12 (itmsl0105)
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# environment
+IMSETTINGS_MODULE = none
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /run/user/1011/vscode-00b9690b-1.63.2-main.sock
+# environment
+PYTHONPATH = /opt/rh/devtoolset-4/root/usr/lib64/python2.7/site-packages:/opt/rh/devtoolset-4/root/usr/lib/python2.7/site-packages:/opt/rh/devtoolset-4/root/usr/lib64/python2.7/site-packages:/opt/rh/devtoolset-4/root/usr/lib/python2.7/site-packages:/opt/rh/rh-java-common/root/usr/lib/python2.7/site-packages
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MAIL = /var/spool/mail/itmsl0105
+# environment
+LOADEDMODULES = 
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# environment
+MODULESHOME = /usr/share/Modules
+# automatic
++F = $(notdir $+)
+# environment
+NO_AT_BRIDGE = 1
+# environment
+VSCODE_PIPE_LOGGING = true
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+LC_ALL = C
+# environment
+JAVACONFDIRS = /opt/rh/devtoolset-4/root/etc/java:/opt/rh/devtoolset-4/root/etc/java:/opt/rh/rh-java-common/root/etc/java
+# environment
+SBX_CHROME_API_RQ = 1
+# environment
+SANDBOX_LD_LIBRARY_PATH = /opt/rh/devtoolset-4/root/usr/lib64:/opt/rh/devtoolset-4/root/usr/lib:/itmslhppc/itmsl0105/workspace/kmacs-array/kmacs:/usr/local/cuda-10.2/lib64:
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/8491afba_1969_42e7_a548_1f2b81967498
+# automatic
+^F = $(notdir $^)
+# environment
+GNOME_TERMINAL_SERVICE = :1.100
+# default
+SUFFIXES := 
+# environment
+HISTSIZE = 1000
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+QTINC = /usr/lib64/qt-3.3/include
+# default
+.RECIPEPREFIX := 
+# makefile
+.DEFAULT_GOAL := all
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_PID = 25014
+# variable set hash-table stats:
+# Load=114/1024=11%, Rehash=0, Collisions=18/141=13%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2052, inode 5908080189): 29 files, no impossibilities.
+
+# 29 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+all:
+#  Command line target.
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := all
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+ 
+# Load=8/32=25%, Rehash=0, Collisions=1/13=8%
+#  recipe to execute (from `Makefile', line 4):
+		nvcc -c $(CFLAGS) src/gpu_lcp.cu -gencode arch=compute_75,code=sm_75 -I/itmslhppc/itmsl0105/workspace/kmacs-array/kmacs/cub/cub/
+		g++ -c $(CFLAGS) -O3 -g -fomit-frame-pointer -fprefetch-loop-arrays -DNDEBUG  src/run.cpp src/sais.c src/libbsc/bsc.cpp src/libbsc/libbsc/adler32/adler32.cpp src/libbsc/libbsc/bwt/divsufsort/divsufsort.c src/libbsc/libbsc/bwt/bwt.cpp src/libbsc/libbsc/coder/coder.cpp src/libbsc/libbsc/coder/qlfc/qlfc.cpp src/libbsc/libbsc/coder/qlfc/qlfc_model.cpp src/libbsc/libbsc/filters/detectors.cpp src/libbsc/libbsc/filters/preprocessing.cpp src/libbsc/libbsc/libbsc/libbsc.cpp src/libbsc/libbsc/lzp/lzp.cpp src/libbsc/libbsc/platform/platform.cpp -I/itmslhppc/itmsl0105/workspace/kmacs-array/kmacs/src/multi-gpu-suffix-array/src/ 
+		nvcc -o  LCPRGC *.o  -L /itmslhppc/itmsl0105/workspace/kmacs-array/kmacs/src/multi-gpu-suffix-array/build/ -lsuffix_array
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-18 09:01:45.11241112
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=4/1024=0%, Rehash=0, Collisions=0/16=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 0 / lookups = 41 / hits = 41
+# # of strcache buffers: 1 (* 8176 B/buffer = 8176 B)
+# strcache used: total = 0 (309) / max = 0 / min = 8176 / avg = 0
+# strcache free: total = 0 (7867) / max = 0 / min = 8176 / avg = 0
+
+# strcache hash-table stats:
+# Load=34/8192=0%, Rehash=0, Collisions=2/41=5%
+# Finished Make data base on Wed Jul 20 09:09:31 2022
+
+ 
