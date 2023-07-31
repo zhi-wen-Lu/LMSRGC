@@ -17,7 +17,8 @@ Decompress commands:
 
 	(decompress)  ./LMSRGDE R-file R-T-file Tempfile De-file V-file
 	 R-file:the reference folder; R-T-file: the compression folder; Tempfile: tempporary folder to store the information of LMS;
-	 V-file:need to be compressed genome folder,required(If not, please pay attention to changing the path of the corresponding file during decoding), whihc is used to verify decoding results.
+	 V-file:need to be compressed genome folder,required(If not, please pay attention to changing the path of the corresponding file during decoding),
+whihc is used to verify decoding results.
 
 
 note:
