@@ -1329,7 +1329,7 @@ int main(int argc, char **argv){
 		//delete [] n_vec;
 		upcaseString.clear();
 		//free(ml);
-		kv_destroy(mh);
+		kv_destroy(ml);
 		//int ret = malloc_trim(0);
 		Tarsequence.clear();
 		Refsequence.clear();
