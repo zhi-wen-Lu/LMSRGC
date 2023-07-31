@@ -17,13 +17,9 @@ Decompress commands:
 
 	(decompress)  ./LMSRGDE R-file R-T-file Tempfile De-file V-file
 	 R-file:the reference folder; R-T-file: the compression folder; Tempfile: tempporary folder to store the information of LMS;
-	 V-file:need to be compressed genome folder,required(If not, please pay attention to changing the path of the corresponding file during decoding),
-		whihc is used to verify decoding results.
+	 V-file:need to be compressed genome folder,required(If not, please pay attention to changing the path of the corresponding file during decoding), whihc is used to verify decoding results.
 
 
 note:
 	The algorithm requires the GCC version to be no higher than 5.4.0, otherwise, errors will be reported during the compilation process. 
-The use of the original algorithm[19] for constructing SA using multiple GPUs needs to pay attention to the communication mode between GPUs, 
-cuda10.0 is used when using NV-link to link GPUs for communication, and cuda9.1 is used when using PCIe to link GPUs for communication, and appropriate 
-adjustments need to be made according to different communication modes during compiling the software. I suggest that you first complete the compilation 
-of the original algorithm for building SA with multiple GPUs, and then compile the algorithm we proposed. 
+The use of the original algorithm[19] for constructing SA using multiple GPUs needs to pay attention to the communication mode between GPUs, cuda10.0 is used when using NV-link to link GPUs for communication, and cuda9.1 is used when using PCIe to link GPUs for communication, and appropriate adjustments need to be made according to different communication modes during compiling the software. I suggest that you first complete the compilation of the original algorithm for building SA with multiple GPUs, and then compile the algorithm we proposed. 
